@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Production
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# iOS
+Pods/
+*.xcworkspace/
+*.xcodeproj/
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+
+# Android
+*.iml
+.gradle/
+local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/build
+/captures
+.externalNativeBuild
+.cxx/
+
+# Misc
+.DS_Store
+*.log
+.env
+coverage/
+tmp/

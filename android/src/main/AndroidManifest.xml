@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:hardwareAccelerated="true">
+
+    <!-- Paste the following line into the AndroidManifest.xml of your project -->
+    <!-- See also: https://capacitorjs.com/docs/plugins/android#manifest -->
+    
+    <!-- Camera permissions and features -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    
+    <!-- ML Kit and CameraX requirements -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    
+    <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
+    
+    <application>
+        <!-- ML Kit barcode scanner -->
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="barcode" />
+    </application>
+</manifest>
